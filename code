@@ -1,0 +1,5 @@
+# Keep only two classes (example: setosa and versicolor)
+df = df[df["species"] != "virginica"]
+4. Select first 2 features
+X = df.iloc[:, :2].values   # first 2 columns
+y = df["species"].values    # target column
